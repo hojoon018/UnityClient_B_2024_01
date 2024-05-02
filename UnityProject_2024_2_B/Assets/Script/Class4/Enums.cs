@@ -46,9 +46,9 @@ namespace STORYGAME
         public int spPoint;
 
 
-        public int currenHpPoint;
-        public int currenSpPoint;
-        public int currenXpPoint;
+        public int currentHpPoint;
+        public int currentSpPoint;
+        public int currentXpPoint;
 
         // 기본 스텟 설정
         public int strength;
