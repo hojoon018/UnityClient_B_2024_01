@@ -30,11 +30,11 @@ namespace STORYGAME
 
     public class GameSystem : MonoBehaviour
     {
-        public static GameSystem instance; //Scene 내부에서만 존재
+        public static GameSystem Instance; //Scene 내부에서만 존재
 
         private void Awake()
         {
-            instance = this;
+            Instance = this;
         }
         public enum GAMESTATE
         {
@@ -60,8 +60,8 @@ namespace STORYGAME
         {
             StoryModel tempStoryModels = FindStoryModel(number);
 
-            //StorySystem.Instance.currentStoryModel = tempStoryModels;
-            //StorySystem.Instance.CoShowText();
+            StorySystem.instance.currentStoryModel = tempStoryModels;
+            StorySystem.instance.CoShowText();
         }
 
         public void ApplyChoice(StoryModel.Result result)           //스토리 선택시 결과
